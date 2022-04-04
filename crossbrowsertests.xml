@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="OpercartSuite" parallel="tests" thread-count="2">
+	
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"/>
+	</listeners>
+	
+	<test name="OpenCartChromeTests">
+		
+		<parameter name="browser" value="chrome"/>
+        <classes>
+			<class name="testCases.TC_001_AccountRegistration"/>
+        </classes>
+	</test>
+	
+	<test name="OpenCartEdgeTests">
+		
+		<parameter name="browser" value="edge"/>
+        <classes>
+			<class name="testCases.TC_001_AccountRegistration"/>
+        </classes>
+	</test>
+	
+	<test name="OpenCartFirefoxTests">
+		
+		<parameter name="browser" value="firefox"/>
+        <classes>
+			<class name="testCases.TC_001_AccountRegistration"/>
+        </classes>
+	</test>
+	
+</suite>
